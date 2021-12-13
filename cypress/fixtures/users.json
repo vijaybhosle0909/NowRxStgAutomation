@@ -1,0 +1,42 @@
+{
+    "nowRxUser":[
+        {
+            "role": "Clerk",
+            "userId": "vijayclerk@yopmail.com",
+            "password": "password",
+            "userName": "vijay"
+        },
+        {
+            "role": "Technician",
+            "userId": "vijaytechnician@yopmail.com",
+            "password": "password",
+            "userName": "vijay"
+        },
+        {
+            "role": "Pharmacist Incharge",
+            "userId": "vijayincharge@yopmail.com",
+            "password": "password",
+            "userName": "vijay"
+        },
+        {   
+            "role": "Pharmacist",
+            "userId": "vijaypharmacist@yopmail.com",
+            "password": "Password@1",
+            "userName": "Vijay"
+        },
+        {
+            "role": "Admin",
+            "userId": "manish@yopmail.com",
+            "password": "password",
+            "userName": "Manish"
+        },
+        {
+            "role": "Admin Invalid Credentials",
+            "userId": "manish1@yopmail.com",
+            "password": "Password",
+            "userName": ""
+        }
+    ],
+    "onlyUserName": "vijayclerk@yopmail.com",
+    "onlyPassword": "password"
+}

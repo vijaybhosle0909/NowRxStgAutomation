@@ -1,0 +1,18 @@
+{
+    "logionPageLocator": {
+        "userId": "#userId",
+        "password": "[type='password']",
+        "loginButton": ".p-r-11"
+    },
+    
+    "dashboardPageLocator": {
+        "userProfileName": "span[class = 'hidden-xs']",
+        "logout": ".m-t-5",
+        "locationSearchBox": "input[role='combobox']",
+        "locationDropdownList": ".dropdown-item",
+        "setLocationButton": ".qf-btn"
+    },
+    "logoutPageLocator":{
+        "unAuthorizesAccessPopup": ".modal-title"
+    }
+}

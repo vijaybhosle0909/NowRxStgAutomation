@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://ui-stg.nowrx.com/",
+  "requestTimeout": 25000,
+  "defaultCommandTimeout": 6000,
+  "env": {
+    "userId": "vijaypharmacist@yopmail.com",
+    "password": "Password@1",
+    "userName": "Vijay"
+  },
+  "projectId": "q9jhqn"
+}
