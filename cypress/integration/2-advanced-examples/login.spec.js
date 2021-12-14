@@ -14,20 +14,6 @@ describe('Login Suite', ()=>{
         cy.visit("/")
     })
 
-    it('Login Without username and password', ()=>{
-        loginPageObject.loginButton().should('be.disabled');
-    })
-
-    it('Login With only username', ()=>{
-        loginPageObject.typeUserId(user.onlyUserName);
-        loginPageObject.loginButton().should('be.disabled');
-    })
-
-    it('Login With only password', ()=>{
-        loginPageObject.typePassword(user.onlyPassword);
-        loginPageObject.loginButton().should('be.disabled');
-    })
-
     it('Login with valid credentials', ()=>{
         loginPageObject.typeUserId(Cypress.env('userId'));
         loginPageObject.typePassword(Cypress.env('password'));
@@ -81,8 +67,30 @@ describe('Login Suite', ()=>{
         dashboardPageObject.clickSetLocationButton();
     })
 
-    // afterEach(()=>{
-    //     dashboardPageObject.clickProfileName();
-    //     dashboardPageObject.clickLogout().click({force:true});
-    // })
+    afterEach(()=>{
+        dashboardPageObject.clickProfileName();
+        dashboardPageObject.clickLogout().click({force:true});
+    })
+})
+
+describe("Login for valid cases", ()=>{
+
+    beforeEach(()=>{
+        cy.visit("/")
+    })
+
+    it('Login Without username and password', ()=>{
+        loginPageObject.loginButton().should('be.disabled');
+    })
+
+    it('Login With only username', ()=>{
+        loginPageObject.typeUserId(user.onlyUserName);
+        loginPageObject.loginButton().should('be.disabled');
+    })
+
+    it('Login With only password', ()=>{
+        loginPageObject.typePassword(user.onlyPassword);
+        loginPageObject.loginButton().should('be.disabled');
+    })
+
 })
